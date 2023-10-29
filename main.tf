@@ -1,4 +1,11 @@
 terraform {
+  cloud {
+    organization = "kozubenko_learn_terraform_aws_instance"
+    workspaces {
+      name = "learn_terraform_aws_instance"
+    }
+  }
+
   required_providers {
     aws = {
       source  = "hashicorp/aws"
